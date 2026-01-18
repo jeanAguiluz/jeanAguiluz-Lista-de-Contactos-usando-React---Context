@@ -1,0 +1,24 @@
+.contact-row:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.contact-actions i {
+    cursor: pointer;
+}
+
+.contact-actions i:hover {
+    color: #dc3545;
+}
+
+.custom-footer {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.custom-footer p {
+    margin: 0;
+}
