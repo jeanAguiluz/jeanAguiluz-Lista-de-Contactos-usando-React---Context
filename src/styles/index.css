@@ -1,5 +1,21 @@
+.contact-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-actions i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-actions i:hover {
+    color: #0d6efd;
+}
+
 .contact-row:hover {
-    background-color: #f8f9fa;
+    background-color: #f1f4f7;
     transition: background-color 0.2s ease;
 }
 
@@ -21,4 +37,13 @@
 
 .custom-footer p {
     margin: 0;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item:first-child {
+    border-top: none;
 }

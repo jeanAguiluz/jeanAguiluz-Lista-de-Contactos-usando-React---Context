@@ -5,7 +5,7 @@ export const Navbar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom'>
 			<div className='container-fluid px-lg-5'>
-				<a className='navbar-brand text-dark fw-bold' href='#!'>Contact manager</a>
+				<a className='navbar-brand text-dark fw-bold' href='#!'>Lista de Contactos</a>
 				<button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='toggle navigation'>
 					<span className='navbar-toggler-icon'></span>
 				</button>

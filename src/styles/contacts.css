@@ -1,0 +1,67 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.contacts-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== LISTA ===== */
+.contact-list {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== ITEM ===== */
+.contact-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* ===== AVATAR ===== */
+.contact-avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+
+/* ===== TEXTO ===== */
+.contact-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.contact-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* ===== ICONOS ===== */
+.contact-actions {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.contact-item:hover .contact-actions {
+    opacity: 1;
+}
+
+.contact-actions i {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.contact-actions i:hover {
+    color: #0d6efd;
+}
