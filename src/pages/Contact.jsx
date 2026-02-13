@@ -46,7 +46,7 @@ const Contact = () => {
                     {contacts.map(contact => (
                         <ContactCard
                             key={contact.id}
-                            data={contact}
+                            contact={contact}
                         />
                     ))}
                 </ul>

@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
-const CardContact = ({ contact }) => {
-    const { actions } = useContext(Context);
+import { deleteContact } from "../store/actions";
+
+const ContactCard = ({ contact }) => {
+    const { dispatch } = useGlobalReducer();
 
     const handleDelete = () => {
-        actions.deleteContact(contact.id);
+        deleteContact(dispatch, contact.id);
     };
 
     return (
@@ -30,7 +32,7 @@ const CardContact = ({ contact }) => {
             {/* Actions */}
             <div className="contact-actions d-flex align-items-center">
                 <Link
-                    to={`/editContact/${contact.id}`}
+                    to={`/edit-contact/${contact.id}`}
                     className="text-decoration-none text-dark me-3"
                     title="Edit contact"
                 >
@@ -95,4 +97,4 @@ const CardContact = ({ contact }) => {
     );
 };
 
-export default CardContact;
+export default ContactCard;
